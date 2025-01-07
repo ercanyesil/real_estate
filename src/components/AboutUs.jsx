@@ -8,18 +8,18 @@ import aboutIconUser from "../assets/images/icons/icon_user_about.png";
 const AboutUs = () => {
   return (
     <section className="bg-white py-16 relative">
-      <div className="absolute -top-8 left-10 w-24 h-24 rounded-full bg-gradient-to-b from-gradient-start to-gradient-end"></div>
+      <div className="max-md:hidden absolute -top-8 left-10 w-24 h-24 rounded-full bg-gradient-to-b from-gradient-start to-gradient-end"></div>
 
-      <div className="container mx-auto px-[160px]">
+      <div className="container mx-auto md:px-40 max-md:px-[30px]">
         {/* Sol Taraf - Metin İçeriği */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div>
-            <span className="global-title  tracking-wider">
+            <span className="global-title tracking-wider">
               WHO ARE WE
             </span>
-            <h2 className="global-text text-[#2B2B2B] font-poppins font-semibold mt-4 mb-6 leading-[65px]">
-              Assisting individuals in<br />
-              locating the appropriate<br />
+            <h2 className="global-text text-[#2B2B2B] font-poppins font-semibold mt-4 mb-6 leading-[65px] text-[27.6px] md:text-[39.8px]">
+              Assisting individuals in<br className='max-md:hidden'/>
+              locating the appropriate<br className='max-md:hidden'/>
               real estate.
             </h2>
             <p className="global-subtitle mb-12">
@@ -29,7 +29,7 @@ const AboutUs = () => {
 
             {/* Özellik Kartları */}
             <div className="space-y-4">
-              <div className="flex items-center bg-white rounded-xl p-4 shadow-sm">
+              <div className="flex items-center bg-white md:rounded-[30px] rounded-[20px] p-4 shadow-[4px_10px_30px_0px_rgba(0,0,0,0.06)]">
                 <div className="mr-10">
                   <img src={aboutIconHome} alt="linkedin Icon" className='w-10 h-10 object-contain'/>                
                 </div>
@@ -39,7 +39,7 @@ const AboutUs = () => {
                 </div>
               </div>
 
-              <div className="flex items-center bg-white rounded-xl p-4 shadow-sm">
+              <div className="flex items-center bg-white md:rounded-[30px] rounded-[20px] p-4 shadow-[4px_10px_30px_0px_rgba(0,0,0,0.06)]">
                 <div className="mr-10">
                   <img src={aboutIconUser} alt="aboutIconUser" className='w-10 h-11 object-contain'/>                
                 </div>

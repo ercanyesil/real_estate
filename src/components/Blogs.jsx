@@ -64,7 +64,7 @@ const Blogs = () => {
   };
 
   return (
-    <section className="bg-primary-color py-24 px-[160px]">
+    <section className="bg-primary-color py-24 md:px-40 max-md:px-[30px]">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
@@ -90,8 +90,16 @@ const Blogs = () => {
           ))}
         </div>
 
+        <div className='pt-6'>
+          <div class="w-[195px] h-[50px] bg-white rounded-[30px] py-3 px-6 text-center text-primary-color font-medium md:hidden">
+            View more blogs
+          </div>
+        </div>
+
+
+
           {/* Navigation Controls */}
-          <div className='flex justify-evenly items-center'>
+          <div className='flex justify-evenly items-center max-md:hidden'>
 
             <button 
               onClick={prevSlide}
@@ -110,7 +118,7 @@ const Blogs = () => {
           </div>
 
         
-        <div className="flex justify-center items-center pt-20">
+        <div className="flex justify-center items-center pt-20 max-md:hidden">
 
 
           {/* Pagination Dots */}

@@ -101,7 +101,7 @@ const Properties = () => {
       image: propertiesThird,
       badge: priceIcon,
       badgeText: "Discounted Price",
-      badgeColor: "#00CE3A",
+      badgeColor: "green",
       price: 3450,
       title: "Charming Cottage in the Meadow",
       address: "1508 Centennial Farm Road Harlan, 51537",
@@ -125,7 +125,7 @@ const Properties = () => {
   return (
     <section className="container mx-auto px-4 py-12">
       {/* Header Section */}
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 px-[95px]">
+      <div className="flex flex-col justify-center md:flex-row md:justify-between items-start md:items-center mb-8 md:px-40 max-md:px-[30px]">
         <div>
           <span className="global-title">
             CHECKOUT OUR NEW
@@ -140,7 +140,7 @@ const Properties = () => {
         </div>
         
         {/* Filter Buttons */}
-        <div className="flex gap-3 mt-4 md:mt-0">
+        <div className="flex justify-center items-center gap-3 mt-4 md:mt-0">
           <button className="px-6 py-2 rounded-full border border-gray-200 text-gray-700 hover:bg-gray-50">
             All
           </button>
@@ -154,11 +154,18 @@ const Properties = () => {
       </div>
 
       {/* Properties Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pl-[95px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:pl-40 max-md:pl-4">
         {propertiesData.map(property => (
           <PropertyCard key={property.id} property={property} />
         ))}
       </div>
+
+      <div className='flex justify-center items-center pt-6'>
+        <div class="w-[233px] h-[50px] border border-primary-color rounded-[30px] py-3 px-6 text-center text-primary-color font-medium md:hidden">
+          View more properties
+        </div>
+      </div>
+
     </section>
   );
 };

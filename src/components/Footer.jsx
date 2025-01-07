@@ -12,10 +12,10 @@ const Footer = () => {
     <footer className="bg-footer-color">
       
       {/* Main Footer Content */}
-      <div className="container mx-auto py-[70px] px-[160px]">
+      <div className="container mx-auto md:px-40 max-md:px-4">
 
         {/* Mobile Layout - Shows only on mobile */}
-        <div className="lg:hidden flex flex-col items-center text-center">
+        <div className="py-[55px] lg:hidden flex flex-col items-center text-center">
           <div className="flex flex-col justify-center items-center mb-6">
             <div className="flex items-center justify-center gap-2 mb-3">
             <div className="w-[50px] h-[50px] bg-primary-color rounded-lg flex items-center justify-center">
@@ -46,26 +46,27 @@ const Footer = () => {
 
             <div>
               <p className="font-bold mb-3">Follow Us on</p>
-              <div className="flex justify-center gap-6">
-                <a href="#" className="text-gray-600 hover:text-indigo-700">
-                  {/* <Linkedin size={24} /> */}
+              <div className="flex justify-center items-center gap-4">
+                <a href="#">
+                  <img src={linkedin} alt="linkedin Icon" className='w-6 h-6 object-contain'/>                
                 </a>
-                <a href="#" className="text-gray-600 hover:text-indigo-700">
-                  {/* <Facebook size={24} /> */}
+                <a href="#">
+                  <img src={facebook} alt="facebook Icon" className='w-6 h-6 object-contain'/>                
                 </a>
-                <a href="#" className="text-gray-600 hover:text-indigo-700">
-                  {/* <Instagram size={24} /> */}
+                <a href="#">
+                  <img src={instagram} alt="instagram Icon" className='w-6 h-6 object-contain'/>                
                 </a>
               </div>
             </div>
+
 
           </div>
         </div>
 
         {/* Desktop Layout - Hidden on mobile */}
-        <div className="hidden lg:grid grid-cols-4 gap-4">
+        <div className="py-[70px] hidden lg:grid grid-cols-4 gap-4">
           {/* Company Info */}
-          <div className="space-y-2">
+          <div className="space-y-6">
             <div className="flex items-center gap-2">
             <div className="w-[50px] h-[50px] bg-primary-color rounded-full flex items-center justify-center">
               <img src={house} alt="House Icon" className='w-6 h-6 object-contain'/>
@@ -113,7 +114,7 @@ const Footer = () => {
           {/* Newsletter */}
           <div>
             <h3 className="font-bold mb-4">Subscribe to our Newsletter!</h3>
-            <EmailInput width="350px" height="60px" buttonSize="40px" />
+            <EmailInput width="333px" height="60px" buttonSize="40px" />
             <div className="mt-6">
               <p className="font-bold mb-3">Follow Us on</p>
               <div className="flex gap-4">
@@ -134,7 +135,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-200 bg-black px-[160px]">
+      <div className="border-t border-gray-200 bg-black max-md:hidden md:px-40 max-md:px-[30px]">
         <div className="container mx-auto py-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white">
             <p>© Company - All rights reserved</p>
@@ -145,6 +146,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      
+      <div className="md:hidden flex justify-center items-center border-t border-gray-200 bg-black h-10">
+        <p className=" text-sm text-white">© Company - All rights reserved</p>
       </div>
       
     </footer>

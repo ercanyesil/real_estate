@@ -6,7 +6,7 @@ const SearchForm = () => {
   const [activeTab, setActiveTab] = useState("sale");
 
   return (
-    <div className="mx-auto bg-white px-0  border-customGray rounded-[30px] shadow-search w-[420px] h-[582px]">
+    <div className="md:w-[420px] md:h-[582px] w-[333px] h-[449px] mx-auto bg-white px-0  border-customGray rounded-[30px] shadow-search">
 
       {/* Tablar */}
       <div className="flex h-[76px] border-b border-customGray  px-6   border-gray-200">
@@ -33,15 +33,15 @@ const SearchForm = () => {
       </div>
 
       {/* Form */}
-      <div className="text-[#6b7280] px-6 py-14">
-        <div className="mb-8">
+      <div className="text-[#6b7280] px-6 md:py-14 py-6">
+        <div className="md:mb-8 mb-4">
           <input
             type="text"
             placeholder="New York, San Francisco, etc"
             className="w-full text-[#aaaaaa] bg-input-color p-3   rounded-lg placeholder-gray-400 focus:ring-2 focus:ring-indigo-500 focus:outline-none"
           />
         </div>
-        <div className="relative w-full mb-8">
+        <div className="relative w-full md:mb-8 mb-4">
           <select className="w-full text-[#aaaaaa] bg-input-color p-3 rounded-lg text-gray-500 focus:ring-2 focus:ring-indigo-500 focus:outline-none appearance-none">
             <option value="">Select Property Type</option>
             <option value="house">House</option>
@@ -63,7 +63,7 @@ const SearchForm = () => {
             />
           </svg>
         </div>
-        <div className="relative w-full mb-8">
+        <div className="relative w-full md:mb-8 mb-4">
           <div className="relative w-full">
             <select className="w-full text-[16px] text-[#aaaaaa] bg-input-color font-poppins  p-3 border-gray-300 rounded-lg text-gray-500 focus:ring-2 focus:ring-indigo-500 focus:outline-none appearance-none leading-[24px]">
               <option value="">Select Rooms</option>

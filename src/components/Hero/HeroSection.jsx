@@ -26,16 +26,16 @@ const HeroSection = () => {
       />
 
       {/* Hero Section */}
-      <section className="container mx-auto py-12 px-[160px]">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="container mx-auto py-12 md:px-40 max-md:px-[30px]">
+        <div className="grid lg:grid-cols-2 gap-12 items-center ">
           <HeroSlider />
 
           <SearchForm />
         </div>
-          <div className="flex items-center justify-center gap-6 mt-8">
+          <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
 
             {/* Customer Stats Card */}
-            <div className="w-[360px] h-[100px] bg-white rounded-[50px] shadow-sm p-4">
+            <div className="md:w-[360px] h-[100px] w-[333px] bg-white rounded-[50px] shadow-sm p-4">
               <div className="flex justify-between items-center">
 
                 <div className="flex -space-x-2 pl-8">
@@ -62,7 +62,7 @@ const HeroSection = () => {
             </div>
 
             {/* Listings Stats Card */}
-            <div className="w-[320px] h-[100px] flex justify-center items-center bg-white rounded-[50px] shadow-sm p-4">
+            <div className="md:w-[320px] h-[100px] w-[333px] flex justify-center items-center bg-white rounded-[50px] shadow-sm p-4">
               <div className="flex items-center">
                 {/* Icon placeholder */}
                   <img
